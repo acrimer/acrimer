@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+h1, h2, p {
+  color: #303030;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid #303030;
+  display: inline-block;
+  position: sticky;
+  top: 0px;
+  background: rgba(255,255,255,0.8);
+}
+
+header.mini .name {
+  max-width: 20%;
+  margin: 0 0 0 5%;
+}
+
+header.mini .name h1 {
+  font-size: 18px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+header.mini nav {
+  max-width: 69%;
+  margin: 0 5% 0 0;
+}
+
+header.mini nav .nav-element {
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#spacer {
+  height: 130px;
+}
+
+.hidden {
+  display: none;
+}
+
+.name {
+  text-align: left;
+  width: 30%;
+  float: left;
+  margin: 2% 0 0 10%;
+  clear: both;
+}
+
+.name h1 {
+  font-size: 32px;
+  font-family: 'Chonburi', cursive;
+  color: #e52020;
+}
+
+nav {
+  text-align: right;
+  float: right;
+  width: 30%;
+  margin: 0 10% 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #b72020;
+}
+
+a:hover {
+  color: #e52020;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Nonum Gothic', sans-serif;
+  line-height: 24px;
+}
+
+.nav-element p {
+  font-size: 18px;
+  font-family: 'Chonburi', cursive;
+}
+
+.active {
+  color: #e52020;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  margin: 40px auto;
+}
+
+#intro {
+  display: flex;
+}
+
+.block {
+  max-width: 42%;
+  margin: 2%;
+}
+
+img {
+  max-width: 100%;
+}

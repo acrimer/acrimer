@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32743152-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+              gtag('config', 'UA-32743152-2');
+            </script>
+            <title>Andrew Crimer</title>
+            <link rel="stylesheet" type="text/css" href="./styles.css">
+            <link href="https://fonts.googleapis.com/css?family=Chonburi|Nanum+Gothic" rel="stylesheet">
+            <script>
+              window.addEventListener('scroll', function(miniNav) {
+                header = document.getElementById('header');
+                spacer = document.getElementById('spacer');
+                scrollPosition = window.scrollY;
+                console.log(scrollPosition);
+                if (scrollPosition >= 130 && !(header.classList.contains('mini') )) {
+                  header.classList.toggle('mini');
+                  spacer.classList.toggle('hidden');
+                }
+                else if (scrollPosition < 130 && header.classList.contains('mini')) {
+                  header.classList.toggle('mini');
+                  spacer.classList.toggle('hidden');
+                  };
+                });
+   </script>
+ 	</head>
+  <body>
+    <header id="header">
+      <div class="name">
+        <a href="/"><h1>A. Crimer</h1></a>
+      </div>
+      <nav>
+        <div class="nav-element">
+          <p><a href="https://github.com/acrimer">github</a></p>
+        </div>
+        <div class="nav-element" id="long">
+          <p><a href="/work">résumé &amp; work</a></p>
+        </div>
+        <div class="nav-element">
+          <p><a href="/contact">contact</a></p>
+        </div>
+      <nav>
+      </header>
+      <div id="spacer" class="hidden">
+      </div>
+    <div class="page">
+      <section id="intro">
+        <div class="block">
+          <p>I'm Andrew Crimer. I do marketing for startups: most recently <a href="https://gust.com">Gust</a>. Outside of work, I co-publish the literary short fiction magazine <a href="https://delayfiction.org">delay fiction</a> and play bass in the black metal band <a href="https://floodsbk.bandcamp.com">Floods</a>. I love reading, music, my cat Cat Basketball, and learning new things—recently, programming and SQL.
+        </div>
+        <div class="block">
+          <img src="./bonkie.jpg">
+        </div>
+      </section>
+      <section id="intro">
+        <div class="block">
+          <p>I'm Andrew Crimer. I do marketing for startups: most recently <a href="https://gust.com">Gust</a>. Outside of work, I co-publish the literary short fiction magazine <a href="https://delayfiction.org">delay fiction</a> and play bass in the black metal band <a href="https://floodsbk.bandcamp.com">Floods</a>. I love reading, music, my cat Cat Basketball, and learning new things—recently, programming and SQL.
+        </div>
+        <div class="block">
+          <img src="./bonkie.jpg">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
