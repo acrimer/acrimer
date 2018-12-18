@@ -1,10 +1,37 @@
+/* typography */
+
+h1, h2 {
+  color: #e52020;
+  font-size: 32px;
+  font-family: 'Chonburi', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #b72020;
+}
+
+a:hover {
+  color: #e52020;
+}
+
+p {
+  color: #303030;
+  font-size: 16px;
+  font-family: 'Nonum Gothic', sans-serif;
+  line-height: 24px;
+}
+
+.nav-element p, h3 {
+  font-size: 18px;
+  font-family: 'Chonburi', cursive;
+}
+
+/* layout */
+
 body {
   margin: 0;
   position: relative;
-}
-
-h1, h2, p {
-  color: #303030;
 }
 
 header {
@@ -54,41 +81,11 @@ header.mini nav .nav-element {
   clear: both;
 }
 
-.name h1 {
-  font-size: 32px;
-  font-family: 'Chonburi', cursive;
-  color: #e52020;
-}
-
 nav {
   text-align: right;
   float: right;
   width: 30%;
   margin: 0 10% 0 0;
-}
-
-a {
-  text-decoration: none;
-  color: #b72020;
-}
-
-a:hover {
-  color: #e52020;
-}
-
-p {
-  font-size: 16px;
-  font-family: 'Nonum Gothic', sans-serif;
-  line-height: 24px;
-}
-
-.nav-element p {
-  font-size: 18px;
-  font-family: 'Chonburi', cursive;
-}
-
-.active {
-  color: #e52020;
 }
 
 .page {
@@ -98,18 +95,92 @@ p {
 
 section {
   width: 100%;
-  margin: 40px auto;
+  padding-top: 60px;
+  margin: 0 auto;
 }
 
-#intro {
+.section-head {
+  text-align: center;
+}
+
+#work {
+  min-height: 3000px;
+}
+
+.section-content {
   display: flex;
 }
 
 .block {
-  max-width: 42%;
+  width: 42%;
   margin: 2%;
+}
+
+.center {
+  text-align: center;
 }
 
 img {
   max-width: 100%;
+}
+
+.section-menu {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.section-menu-item {
+  width: 32%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 -2px 0 auto;
+  border-top: 2px solid #303030;
+  border-left: 2px solid #303030;
+  border-bottom: 2px solid #303030;
+  border-right: 2px solid #fff;
+  z-index: 1;
+}
+
+.last {
+  border-right: 2px solid #303030;
+}
+
+.section-menu-item:hover {
+  border: 2px solid #e52020;
+  color: #e52020;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.section-menu-item.active {
+  border-top: 2px solid #e52020;
+  border-right: 2px solid #e52020;
+  border-left: 2px solid #e52020;
+  border-bottom: 2px solid #ffffff;
+  color: #e52020;
+  z-index: 4;
+}
+
+.project {
+  display: none;
+}
+
+.project.active {
+  margin-top: -2px;
+  display: block;
+  border: 2px solid #e52020;
+  width: 100%;
+  height: 1000px;
+  z-index: 3;
+}
+
+footer {
+  width: 100%;
+  border-top: 2px solid #303030;
+  text-align: center;
+}
+
+.footer-content {
+  margin: 20px auto;
 }
