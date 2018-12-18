@@ -41,6 +41,7 @@ header {
   position: sticky;
   top: 0px;
   background: rgba(255,255,255,0.8);
+  z-index: 5;
 }
 
 header.mini .name {
@@ -131,7 +132,7 @@ img {
 }
 
 .section-menu-item {
-  width: 32%;
+  width: 25%;
   padding: 10px;
   text-align: center;
   margin: 0 -2px 0 auto;
@@ -143,6 +144,7 @@ img {
 }
 
 .last {
+  margin: 0 auto;
   border-right: 2px solid #303030;
 }
 
@@ -170,7 +172,7 @@ img {
   margin-top: -2px;
   display: block;
   border: 2px solid #e52020;
-  width: 100%;
+  width: (100% - 6px);
   height: 1000px;
   z-index: 3;
 }
