@@ -113,8 +113,8 @@ section {
 }
 
 .block {
-  width: 42%;
-  margin: 2%;
+  width: 45%;
+  margin: 5%;
 }
 
 .center {
@@ -129,38 +129,52 @@ img {
   display: flex;
   text-align: center;
   width: 100%;
+  border: 2px solid #303030;
 }
 
 .section-menu-item {
   width: 25%;
   padding: 10px;
   text-align: center;
-  margin: 0 -2px 0 auto;
+  margin: -2px;
+  border-left: 2px solid rgba(0,0,0,0);
+  border-right: 2px solid rgba(0,0,0,0);
   border-top: 2px solid #303030;
-  border-left: 2px solid #303030;
   border-bottom: 2px solid #303030;
-  border-right: 2px solid #fff;
   z-index: 1;
 }
 
+.first {
+  border-left: 2px solid #303030;
+}
+
 .last {
-  margin: 0 auto;
   border-right: 2px solid #303030;
 }
 
 .section-menu-item:hover {
-  border: 2px solid #e52020;
+  border-top: 2px solid #e52020;
+  border-bottom: 2px solid #e52020;
   color: #e52020;
   cursor: pointer;
   z-index: 2;
 }
 
+.first:hover {
+  border-left: 2px solid #e52020;
+}
+
+.last:hover {
+  border-right: 2px solid #e52020;
+}
+
 .section-menu-item.active {
+  color: #e52020;
   border-top: 2px solid #e52020;
   border-right: 2px solid #e52020;
   border-left: 2px solid #e52020;
-  border-bottom: 2px solid #ffffff;
-  color: #e52020;
+  border-bottom: none;
+  background-color: #ebf7ea;
   z-index: 4;
 }
 
@@ -169,10 +183,15 @@ img {
 }
 
 .project.active {
-  margin-top: -2px;
+  position: relative;
   display: block;
-  border: 2px solid #e52020;
-  width: (100% - 6px);
+  width: 100%;
+  background-color: #ebf7ea;
+  border-left: 2px solid #e52020;
+  border-right: 2px solid #e52020;
+  border-bottom: 2px solid #e52020;
+  border-top: 2px solid #e52020;
+  margin-top: -2px;
   height: 1000px;
   z-index: 3;
 }

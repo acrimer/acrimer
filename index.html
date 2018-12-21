@@ -1,72 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <meta charset="utf-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32743152-2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-              gtag('config', 'UA-32743152-2');
-            </script>
-            <title>Andrew Crimer</title>
-            <link rel="stylesheet" type="text/css" href="./styles.css">
-            <link href="https://fonts.googleapis.com/css?family=Chonburi|Nanum+Gothic" rel="stylesheet">
-            <script>
-              document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
-
-                window.addEventListener('scroll', function(miniNav) {
-                  header = document.getElementById('header');
-                  spacer = document.getElementById('spacer');
-                  scrollPosition = window.scrollY;
-                  if (scrollPosition >= 130 && !(header.classList.contains('mini') )) {
-                    header.classList.toggle('mini');
-                    spacer.classList.toggle('hidden');
-                  }
-                  else if (scrollPosition < 130 && header.classList.contains('mini')) {
-                    header.classList.toggle('mini');
-                    spacer.classList.toggle('hidden');
-                  };
-                });
-                sectionItems = document.getElementsByClassName('section-menu-item');
-                for (var i = 0; i < sectionItems.length; i++) {
-                  sectionItems[i].addEventListener('click', function(expandProject) {
-                    clickedItemId = event.target.id;
-                    for (var e = 0; e < sectionItems.length; e++) {
-                      if ( sectionItems[e].classList.contains('active') && ( sectionItems[e].id != clickedItemId) ) {
-                        sectionItems[e].classList.toggle('active');
-                        };
-                      };
-                      clickedItem = document.getElementById(clickedItemId);
-                      console.log(clickedItem);
-                    clickedItem.classList.toggle('active');
-                    document.getElementById('section-' + clickedItemId).classList.toggle('active');
-                  });
-                }
-              });
-           </script>
- 	</head>
+      gtag('config', 'UA-32743152-2');
+    </script>
+    <title>Andrew Crimer</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Nanum+Gothic" rel="stylesheet">
+    <script type="text/javascript" src="./interactions.js"></script>
   <body>
     <header id="header">
-      <div class="name">
-        <a href="/"><h1>A. Crimer</h1></a>
-      </div>
-      <nav>
-        <div class="nav-element">
-          <p><a href="https://github.com/acrimer">github</a></p>
-        </div>
-        <div class="nav-element" id="long">
-          <p><a href="#work">résumé &amp; work</a></p>
-        </div>
-        <div class="nav-element">
-          <p><a href="#contact">contact</a></p>
-        </div>
-      <nav>
-      </header>
-      <div id="spacer" class="hidden">
-      </div>
+    <div class="name">
+      <a href="/"><h1>A. Crimer</h1></a>
+    </div>
+    <nav>
+    <div class="nav-element">
+      <p><a href="https://github.com/acrimer">github</a></p>
+    </div>
+    <div class="nav-element" id="long">
+      <p><a href="#work">résumé &amp; work</a></p>
+    </div>
+    <div class="nav-element">
+      <p><a href="#contact">contact</a></p>
+    </div>
+    <nav>
+    </header>
+    <div id="spacer" class="hidden">
+    </div>
     <div class="page">
       <section id="intro">
       <div class="section-content">
@@ -83,17 +50,17 @@
         <h2>work</h2>
       </div>
       <div class="section-menu">
-        <div class="section-menu-item" id="delay">
-          <h3>delay fiction</h3>
+        <div class="section-menu-item first" id="delay">
+          <h3 id="delay">delay fiction</h3>
         </div>
         <div class="section-menu-item" id="fet">
-          <h3>fet</h3>
+          <h3 id="fet">fet</h3>
         </div>
         <div class="section-menu-item" id="vid">
-          <h3>gust launch video</h3>
+          <h3 id="vid">gust launch video</h3>
         </div>
         <div class="section-menu-item last" id="ebook">
-          <h3>inc ebook</h3>
+          <h3 id="ebook">inc ebook</h3>
         </div>
       </div>
       <div class="project" id="section-delay">
@@ -114,20 +81,20 @@
         <h2>contact</h2>
       </div>
       <div class="section-content center">
-      <div class="block">
-        <p><a href="mailto:andrew.crimer@gmail.com">email</p>
-        <p><a href="https://linkedin.com/in/andrewcrimer">linkedin</a></p>
-      </div>
-      <div class="block">
-        <p>or don't</p>
-      </div>
-      </div>
-      </section>
+        <div class="block">
+          <p><a href="mailto:andrew.crimer@gmail.com">email</p>
+            <p><a href="https://linkedin.com/in/andrewcrimer">linkedin</a></p>
+          </div>
+          <div class="block">
+            <p>or don't</p>
+          </div>
+        </div>
+        </section>
       </div>
       <footer>
       <div class="footer-content">
         <p>&copy; 2018 <a href="/">Andrew Crimer</a></p>
       </div>
       </footer>
-  </body>
-</html>
+    </body>
+  </html>
