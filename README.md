@@ -1,3 +1,3 @@
-## DELAY FICTION DOT ORG SLASH COM
+## acrimer dot com
 
-A literary magazine
+it's a personal site for Andrew Crimer. 
