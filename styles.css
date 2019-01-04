@@ -22,9 +22,14 @@ p {
   line-height: 24px;
 }
 
-.nav-element p, h3 {
+.nav-element p {
   font-size: 18px;
   font-family: 'Chonburi', cursive;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Lora', serif;
 }
 
 /* layout */
@@ -90,14 +95,28 @@ nav {
 }
 
 .page {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 section {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: -4px auto 0 auto;
+  background: -moz-linear-gradient(-45deg, #efefef 0%, #fff 50%, #efefef 100%);
+  background: -webkit-linear-gradient(-45deg, #efefef 0%,#fff 50%,#efefef 100%);
+  background: linear-gradient(135deg, #efefef 0%,#fff 50%,#efefef 100%);
+}
+
+.section-wrap {
+  width: 80%:
+}
+
+.flex {
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .section-head {
@@ -112,6 +131,7 @@ section {
 .block {
   width: 45%;
   margin: 0% 5%;
+  text-align: left;
 }
 
 .center {
@@ -122,11 +142,16 @@ img {
   max-width: 100%;
 }
 
+#work {
+  background: #fff;
+}
+
 .section-menu {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex: 1 1 auto;
   text-align: center;
-  width: 100%;
   max-width: 1024px;
   border-top: 1px solid #303030;
   border-bottom: 1px solid #303030;
@@ -147,7 +172,7 @@ img {
 }
 
 .short {
-  margin-top: 15%;
+  margin-top: 17.5%;
 }
 
 .section-menu-item:hover {
@@ -164,7 +189,7 @@ img {
   border-right: 1px solid #e52020;
   border-left: 1px solid #e52020;
   border-bottom: none;
-  background-color: #f7f7f7;
+  background-color: #efefef;
   z-index: 4;
 }
 
@@ -181,9 +206,10 @@ img {
 
 .project.active {
   position: relative;
+  margin: 0 auto;
   display: block;
-  width: 100%;
-  background-color: #f7f7f7;
+  width: 80%;
+  background-color: #efefef;
   border-left: 1px solid #e52020;
   border-right: 1px solid #e52020;
   border-bottom: 1px solid #e52020;
@@ -234,10 +260,6 @@ li {
   margin-bottom: 5px;
 }
 
-li strong {
-  font-family: 'Chonburi', cursive;
-}
-
 .writeup {
   width: 90%;
   margin: 40px 5%;
@@ -268,6 +290,10 @@ li strong {
   width: 50%;
 }
 
+.title h3 {
+  font-family: 'Chonburi', cursive;
+}
+
 .right {
   text-align: right;
 }
@@ -283,13 +309,14 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  .page {
+  .section-wrap {
     width: 95%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
+
   .mobile {
     display: block;
   }
@@ -324,6 +351,7 @@ footer {
   }
 
   .project.active {
+    width: 100%;
     margin-top: -20px;
     border-top: 0px solid;
   }
