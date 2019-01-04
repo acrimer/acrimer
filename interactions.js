@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
       spacer.classList.toggle('hidden');
     };
   });
+
+  document.getElementById('download-resume').addEventListener('click', function(trackDownload) {
+    ga('send', 'event', 'interaction', 'download', 'resume');
+  });
+
   sectionItems = document.getElementsByClassName('section-menu-item');
   console.log(sectionItems);
   for (var i = 0; i < sectionItems.length; i++) {
