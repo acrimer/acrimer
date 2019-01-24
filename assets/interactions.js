@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
   today = new Date();
   year = today.getFullYear();
-  console.log(year);
   document.getElementById('year').innerHTML = year;
 
   window.addEventListener('scroll', function(miniNav) {
