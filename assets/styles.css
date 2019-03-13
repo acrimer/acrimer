@@ -138,6 +138,21 @@ section {
   justify-content: center;
 }
 
+.block ul {
+  margin: 40px auto 0px auto;
+  width: 80%;
+}
+
+.block ul li strong {
+  font-size: 18px;
+  font-family: 'Chonburi', cursive;
+}
+
+.block .logo-row {
+  width: 80%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -265,12 +280,21 @@ li {
   margin: 40px 5%;
 }
 
+.writeup-single {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.writeup-single p {
+  margin-bottom: 20px;
+}
+
 .res-section {
   width: 90%;
   margin: 40px 5%;
 }
 
-.res-section ul {
+ul {
   list-style-type: square;
 }
 
@@ -296,6 +320,25 @@ li {
 
 .right {
   text-align: right;
+}
+
+.button {
+  background-color: #b72020;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+  margin: 20px auto 0px auto;
+  padding: 30px 0px;
+  border-radius: 5px;
+}
+
+.button h3 {
+  margin: 0 auto;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #e52020;
 }
 
 footer {
@@ -381,7 +424,7 @@ footer {
     margin: 20px 5%;
   }
 
-  .res-section ul {
+  ul {
     padding-inline-start: 20px;
   }
 }
