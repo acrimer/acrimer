@@ -141,6 +141,7 @@ section {
 .block ul {
   margin: 40px auto 0px auto;
   width: 80%;
+  text-align: left;
 }
 
 .block ul li strong {
@@ -409,6 +410,14 @@ footer {
     display: inline-block;
   }
 
+  .respond {
+    text-align: center;
+  }
+
+  .logo-row {
+    margin-top: 20px;
+  }
+
   .glance {
     width: 100%;
     display: block;
@@ -422,6 +431,10 @@ footer {
 
   .res-section {
     margin: 20px 5%;
+  }
+
+  .writeup-single {
+    width: 85%;
   }
 
   ul {
