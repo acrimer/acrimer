@@ -512,6 +512,10 @@ footer {
     width: 85%;
   }
 
+  .button-small {
+    width: 80%;
+  }
+
   ul {
     padding-inline-start: 20px;
   }
