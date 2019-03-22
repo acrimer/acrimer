@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
   });
 
   document.getElementById('download-resume').addEventListener('click', function(trackDownload) {
-    ga('send', 'event', 'interaction', 'download', 'resume');
+    gtag('event', 'download', {
+        'event_category': 'interaction',
+        'event_label': 'resume',
+    });
   });
 
   sectionItems = document.getElementsByClassName('section-menu-item');
