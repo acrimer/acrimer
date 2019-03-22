@@ -1,35 +1,50 @@
 /* typography */
 
 h1, h2 {
-  color: #e52020;
+  color: #d61500;
   font-size: 32px;
-  font-family: 'Chonburi', cursive;
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
+  text-decoration: none;
 }
 
 a {
   text-decoration: none;
-  color: #b72020;
+  color: #0066a5;
 }
 
 a:hover {
-  color: #e52020;
+  color: #009dff;
+  text-decoration: underline;
 }
 
 p {
   color: #303030;
   font-size: 16px;
-  font-family: 'Nonum Gothic', sans-serif;
-  line-height: 24px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 32px;
 }
 
 .nav-element p {
   font-size: 18px;
-  font-family: 'Chonburi', cursive;
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
+  line-height: 18px;
+}
+
+.nav-element p a {
+  color: #303030;
+}
+
+.nav-element p a:hover {
+  color: #009dff;
+  text-decoration: underline;
 }
 
 h3 {
   font-size: 20px;
-  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 /* layout */
@@ -104,9 +119,11 @@ section {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: -4px auto 0 auto;
-  background: -moz-linear-gradient(-45deg, #efefef 0%, #fff 50%, #efefef 100%);
-  background: -webkit-linear-gradient(-45deg, #efefef 0%,#fff 50%,#efefef 100%);
-  background: linear-gradient(135deg, #efefef 0%,#fff 50%,#efefef 100%);
+/*  background: -moz-linear-gradient(-45deg, #eff9ff 0%, #fff 50%, #eff9ff 100%);
+  background: -webkit-linear-gradient(-45deg, #eff9ff 0%,#fff 50%,#eff9ff 100%);
+  background: linear-gradient(135deg, #eff9ff 0%,#fff 50%,#eff9ff 100%);
+  */
+  background-color: #eff9ff;
 }
 
 .section-wrap {
@@ -129,29 +146,46 @@ section {
 }
 
 .block {
-  width: 45%;
-  margin: 0% 5%;
+  width: 40%;
   text-align: left;
+}
+
+.left {
+  margin: 0% 0% 0% 10%;
+}
+
+.right {
+  margin: 0% 10% 0% 0%;
 }
 
 .center {
   justify-content: center;
 }
 
+.service {
+  margin: 0% 10% 0% 0%;
+  text-align: center;
+}
+
 .block ul {
   margin: 40px auto 0px auto;
-  width: 80%;
+  width: 40%;
   text-align: left;
 }
 
 .block ul li strong {
   font-size: 18px;
-  font-family: 'Chonburi', cursive;
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 .block .logo-row {
   width: 80%;
   margin: 0 auto;
+}
+
+.block img {
+  width: 80%;
 }
 
 img {
@@ -192,20 +226,20 @@ img {
 }
 
 .section-menu-item:hover {
-  border-top: 1px solid #e52020;
-  border-bottom: 1px solid #e52020;
-  color: #e52020;
+  border-top: 1px solid #009dff;
+  border-bottom: 1px solid #009dff;
+  color: #009dff;
   cursor: pointer;
   z-index: 5;
 }
 
 .section-menu-item.active {
-  color: #e52020;
-  border-top: 1px solid #e52020;
-  border-right: 1px solid #e52020;
-  border-left: 1px solid #e52020;
+  color: #009dff;
+  border-top: 1px solid #009dff;
+  border-right: 1px solid #009dff;
+  border-left: 1px solid #009dff;
   border-bottom: none;
-  background-color: #efefef;
+  background-color: #eff9ff;
   z-index: 4;
 }
 
@@ -225,11 +259,11 @@ img {
   margin: 0 auto;
   display: block;
   width: 80%;
-  background-color: #efefef;
-  border-left: 1px solid #e52020;
-  border-right: 1px solid #e52020;
-  border-bottom: 1px solid #e52020;
-  border-top: 1px solid #e52020;
+  background-color: #eff9ff;
+  border-left: 1px solid #009dff;
+  border-right: 1px solid #009dff;
+  border-bottom: 1px solid #009dff;
+  border-top: 1px solid #009dff;
   margin-top: -1px;
   z-index: 3;
 }
@@ -271,7 +305,7 @@ img {
 li {
   color: #303030;
   font-size: 16px;
-  font-family: 'Nonum Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 24px;
   margin-bottom: 5px;
 }
@@ -288,6 +322,33 @@ li {
 
 .writeup-single p {
   margin-bottom: 20px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.button-small {
+  padding: 5px;
+  border: 1px solid #0066a5;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto 40px auto;
+}
+
+.button-small p {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0066a5;
+}
+
+.cta:hover .button-small {
+  border: 1px solid #009dff;
+}
+
+.cta:hover .button-small p {
+  color: #009dff;
 }
 
 .res-section {
@@ -316,7 +377,8 @@ ul {
 }
 
 .title h3 {
-  font-family: 'Chonburi', cursive;
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 .right {
@@ -324,7 +386,7 @@ ul {
 }
 
 .button {
-  background-color: #b72020;
+  background-color: #0066a5;
   color: #fff;
   width: 70%;
   text-align: center;
@@ -339,7 +401,16 @@ ul {
 }
 
 .button:hover {
-  background-color: #e52020;
+  background-color: #009dff;
+}
+
+.button:hover a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 footer {
@@ -410,6 +481,10 @@ footer {
     display: inline-block;
   }
 
+  .block.right {
+    text-align: center;
+  }
+
   .respond {
     text-align: center;
   }
@@ -435,6 +510,10 @@ footer {
 
   .writeup-single {
     width: 85%;
+  }
+
+  .button-small {
+    width: 80%;
   }
 
   ul {
