@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
   });
 
   sectionItems = document.getElementsByClassName('section-menu-item');
-  console.log(sectionItems);
   for (var i = 0; i < sectionItems.length; i++) {
     sectionItems[i].addEventListener('click', function(expandProject) {
       clickedItemId = event.target.id;
@@ -50,6 +49,15 @@ document.addEventListener('DOMContentLoaded', function(loadPageListeners) {
           projects[a].classList.toggle('active');
         };
       };
+    });
+
+    sectionItems[i].addEventListener('click', function(trackOpen) {
+      projectId = event.target.id;
+      gtag('event', 'open', {
+        'event_category': 'interaction',
+        'event_label': projectId,
+      });
+      console.log('clicked' + projectId);
     });
   }
 });
