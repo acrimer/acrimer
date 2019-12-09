@@ -25,11 +25,18 @@ p {
   line-height: 32px;
 }
 
+.nav-element {
+  display: inline-block;
+  margin-left: 20px;
+}
+
 .nav-element p {
   font-size: 18px;
   font-weight: 700;
   font-family: 'Frank Ruhl Libre', serif;
   line-height: 18px;
+  vertical-align: middle;
+  margin-top: 30%;
 }
 
 .nav-element p a {
@@ -98,14 +105,14 @@ header.mini nav .nav-element {
   text-align: left;
   width: 30%;
   float: left;
-  margin: 2% 0 0 10%;
+  margin: 0 0 0 10%;
   clear: both;
 }
 
 nav {
   text-align: right;
   float: right;
-  width: 30%;
+  width: 50%;
   margin: 0 10% 0 0;
 }
 
@@ -128,6 +135,12 @@ section {
 
 .section-wrap {
   width: 80%:
+}
+
+.interstitial {
+  background-color: #eff9ff;
+  display: block;
+  margin: 20px auto;
 }
 
 .flex {
@@ -162,6 +175,15 @@ section {
   justify-content: center;
 }
 
+.graphs {
+  text-align: center;
+}
+
+.graph {
+  width: 80%;
+  margin: 35px auto 0 auto;
+}
+
 .service {
   margin: 0% 10% 0% 0%;
   text-align: center;
@@ -192,7 +214,12 @@ img {
   max-width: 100%;
 }
 
-#work {
+.eighty {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.white {
   background: #fff;
 }
 
@@ -465,6 +492,14 @@ footer {
     width: 80%;
   }
 
+  .nav-element {
+    margin-left: 10px;
+  }
+
+  .nav-element p {
+    margin-top: 0px;
+  }
+
   .project.active {
     width: 100%;
     margin-top: -20px;
@@ -491,6 +526,15 @@ footer {
 
   .logo-row {
     margin: 20px auto 0 auto;
+  }
+
+  .eighty {
+    width: 95%;
+  }
+
+  .graph {
+    width: 100%;
+    margin-top: 35px;
   }
 
   .glance {
