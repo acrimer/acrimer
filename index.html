@@ -17,6 +17,20 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-32743152-2');
+      gtag('config', 'AW-751354423');
+
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-751354423/o9G9CLKkvsoBELeEo-YC',
+          'event_callback': callback
+        });
+        return false;
+      }
     </script>
 
     <script type="application/ld+json">
@@ -113,7 +127,7 @@
                 <p>Outside of work, I co-publish the literary short fiction magazine <a href="https://delayfiction.org">delay fiction</a> and play bass in the black metal band <a href="https://floodsbk.bandcamp.com">Floods</a>.</p>
                 <p>I love reading, music, my cat Cat Basketball, and learning new things. If something is truly worth doing, I do it hard, so I'm always working on learning whatever's necessary to make it happen.</p>
             <div class="interstitial cta">
-              <h3>Looking for startup growth? <a href="mailto:andrew.crimer@gmail.com">Let's talk.</a></h3>
+              <h3>Looking for startup growth? <a href="mailto:andrew.crimer@gmail.com" onclick="gtag_report_conversion()">Let's talk.</a></h3>
             </div>
 
               </div>
@@ -138,7 +152,7 @@
                 <li>Move your blog off that subdomain. Yes, I can do that (even if it means building a new blog from scratch, in the programming language of your choice).</li>
               </ol>
              </div>
-              <h3 class="cta">SEO is really, truly real. If you want some, <a href="mailto:andrew.crimer@gmail.com">email me</a>.</h3>
+              <h3 class="cta">SEO is really, truly real. If you want some, <a onclick="gtag_report_conversion()" href="mailto:andrew.crimer@gmail.com">email me</a>.</h3>
             </div>
           </div>
         </section>
@@ -151,7 +165,7 @@
               <p>Most traditional ad agencies fundamentally misunderstand programmatic ads. I learned how to buy ads on budgets that couldn't support frivolous spends or missed results, so my approach is a little different. First, we figure out what results actually matter and what your business can afford per lead/conversion. Then we find channels that lead to acquisitions within acceptable cost per result. Then we scale up. No waste!</p>
               <p>How does my approach work so much better? The answer is: data. I don't scale up spends until I have found channels that actually work. Unlike other agencies, I don't try to tell you "impressions" matter (except when they really do)—I look for meaningful business results and audit platform-reported attribution constantly to make sure that a dollar in spend returns more than a dollar in results. The modeling is complicated, the platform numbers are usually wrong, and most agencies would just rather tell you that the ads are working than do the annoying and tedious work of figuring out whether or not they are. I do the work instead.</p>
               <p>Do you spend money on Google Ads, LinkedIn, Twitter, Facebook, reddit, or Quora? Let's talk about what would happen if someone put in the time to understand where that money was really going.</p>
-              <h3 class="cta">I build online ad campaigns that work at scale. <a href="mailto:andrew.crimer@gmail.com">Drop me a line.</a></h3>
+              <h3 class="cta">I build online ad campaigns that work at scale. <a onclick="gtag_report_conversion()" href="mailto:andrew.crimer@gmail.com">Drop me a line.</a></h3>
             </div>
           </div>
         </section>
@@ -414,7 +428,7 @@
             </div>
             <div class="section-content center">
               <div class="block">
-                <p>If you need your funnel to work better, send me an <a href="mailto:andrew.crimer@gmail.com">email</a>. If your inquiry is related to delay fiction, please email me at my <a href="mailto:andrew@delayfiction.org">delay email</a>.</p>
+                <p>If you need your funnel to work better, send me an <a onclick="gtag_report_conversion()" href="mailto:andrew.crimer@gmail.com">email</a>. If your inquiry is related to delay fiction, please email me at my <a href="mailto:andrew@delayfiction.org">delay email</a>.</p>
                 <p>You can also find me on <a href="https://linkedin.com/in/andrewcrimer">linkedin</a>.</p>
               </div>
             </div>
