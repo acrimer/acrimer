@@ -1,37 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-
-    <!--
-      i made this. check out the source code on github:
-      https://github.com/acrimer/acrimer
-    -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32743152-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-32743152-2');
-      gtag('config', 'AW-751354423');
-
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-          'send_to': 'AW-751354423/o9G9CLKkvsoBELeEo-YC',
-          'event_callback': callback
-        });
-        return false;
-      }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew Crimer</title>
+    <meta name="description" content="A personal website for Andrew Crimer, a startup marketer and musician living in Brooklyn, NY.">
 
     <script type="application/ld+json">
       {
@@ -40,361 +14,192 @@
         "name": "Andrew Crimer",
         "email": "andrew.crimer@gmail.com",
         "url": "https://acrimer.com",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "delay fiction",
-          "url": "https://delayfiction.org"
-        },
         "alumniOf": {
           "@type": "educationalOrganization",
           "name": "Connecticut College",
           "url": "https://conncoll.edu"
-        },
-        "knowsAbout": [
-          {
-            "@type": "Thing",
-            "name": "marketing"
-          },
-          {
-            "@type": "Thing",
-            "name": "search engine optimization"
-          }
-        ]
+        }
       }
     </script>
 
-    <title>Andrew Crimer</title>
-    <meta name="description" content="Andrew Crimer: startup marketer, editor, aspiring programmer, bassist, and petter of cats.">
     <link rel="canonical" href="https://acrimer.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">    <style>
+        p, ol, li {
+          font-family: 'Poppins', sans-serif;
+          font-size: 22px;
+          line-height: 42px;
+          color: #222;
+        }
 
-    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:700|Quicksand" rel="stylesheet">
+        h1, h2, h3 {
+          font-family: 'Bree Serif', serif;
+        }
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e52020">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#e52020">
+        h1 a {
+          font-size: 48px;
+          color: #222;
+          text-decoration: none;
+        }
 
-    <!-- social cards for shareability -->
+        h2 a {
+          color: #222;
+          text-decoration: none;
+        }
+
+        h2, h3 {
+          font-size: 36px;
+        }
+
+        a {
+          color: #222;
+          text-decoration: underline;
+          text-decoration-color: #ffadb0;
+          text-decoration-thickness: 3px;
+          text-underline-position: under;
+          text-underline-offset: 3px;
+        }
+
+        a:hover {
+          color: #ffadb0;
+        }
+
+        h1 a:hover, h2 a:hover {
+          color: #222;
+          text-decoration: underline;
+          text-decoration-color: #ffadb0;
+          text-decoration-thickness: 5px;
+          text-underline-position: under;
+          text-underline-offset: 5px;
+        }
+
+        .section-title {
+          margin: 0 auto;
+          text-align: center;
+          color: #ffadb0;
+        }
+
+        body {
+          width: 100%;
+        }
+
+        .content, .ctas {
+          max-width: 1080px;
+          width: 94%;
+          margin: 40px auto;
+          padding: 40px 0;
+        }
+
+        .header {
+          text-align: center;
+          margin: 0 auto;
+          width: ;
+        }
+
+        .dotty {
+          background-color: #fff;
+          opacity: 0.8;
+          background-image:  radial-gradient(#ffadb0 1px, transparent 1px), radial-gradient(#ffadb0 1px, #f5f5f5 1px);
+          background-size: 20px 20px;
+          background-position: 0 0,10px 10px;
+          box-shadow: 0px 12px 19px 0px rgba(46,46,46,0.1), 0px -12px 19px 0px rgba(46,46,46,0.1);
+          -webkit-box-shadow: 0px 12px 19px 0px rgba(46,46,46,0.1), 0px -12px 19px 0px rgba(46,46,46,0.1);
+          -moz-box-shadow: 0px 12px 19px 0px rgba(46,46,46,0.1), 0px -12px 19px 0px rgba(46,46,46,0.1);
+        }
+
+        .ctas, .quote {
+          text-align: center;
+        }
+
+        .quote p, .header p {
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: 2px;
+          font-weight: 100;
+          font-style: italic;
+        }
+
+        .footy {
+          text-align: center;
+        }
+
+        @media (max-width: 750px) {
+          .no-mobile {
+            display: none;
+          }
+        }
+    </style>
+
+    <!-- fine okay -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@adcrimer">
     <meta name="twitter:creator" content="@adcrimer">
     <meta name="twitter:title" content="A. Crimer">
-    <meta name="twitter:description" content="Full-stack startup marketer, editor, aspiring programmer, bassist, and petter of cats.">
-    <meta name="twitter:image" content="https://acrimer.com/assets/acrimer-card.png">
+    <meta name="twitter:description" content="A personal website for Andrew Crimer, a startup marketer and musician living in Brooklyn, NY.">
+    <meta name="twitter:image" content="https://acrimer.com/acrimer-social-share.png">
 
     <meta name="og:url" content="https://acrimer.com/">
-    <meta name="og:image" content="https://acrimer.com/assets/acrimer-card.png">
-    <meta name="og:description" content="Full-stack startup marketer, editor, aspiring programmer, bassist, and petter of cats.">
+    <meta name="og:image" content="https://acrimer.com/acrimer-social-share.png">
+    <meta name="og:description" content="A personal website for Andrew Crimer, a startup marketer and musician living in Brooklyn, NY.">
     <meta name="og:title" content="A. Crimer">
-
-    <script type="text/javascript" src="/assets/interactions.js"></script>
-    <body>
-      <header id="header">
-        <div class="name">
-          <a href="/"><h1>A. Crimer</h1></a>
-        </div>
-        <nav>
-         <div class="nav-element">
-            <p><a href="https://github.com/acrimer">github</a></p>
-          </div>
-          <div class="nav-element" id="long">
-            <p><a href="#work">résumé &amp; work</a></p>
-          </div>
-          <div class="nav-element">
-            <p><a href="#contact">contact</a></p>
-          </div>
-          </nav>
-      </header>
-      <div id="spacer" class="hidden">
+  </head>
+  <body>
+    <div class="header">
+      <p>Congrats, you found a website about</p>
+      <h1><a href="/">Andrew Crimer</a></h1>
+      <p>That’s me!</p>
+    </div>
+    <div class="intro dotty">
+      <div class="content">
+        <h2>What I’m into:</h2>
+        <ol>
+          <li>Growth marketing &amp; demand gen for startups</li>
+          <li>Reading and occasionally editing literary fiction</li>
+          <li>Playing music—primarily guitar in black/death metal bands (currently, <a href="https://skeletalmass.bandcamp.com">Skeletal Mass</a>)</li>
+          <li>Making websites for projects and stuff</li>
+        </ol>
+        <h2>What I'm less into:</h2>
+        <ol>
+          <li>Maintaining my personal website</li>
+          <li>My design skills (this website is about as good as it gets, tbh)</li>
+        </ol>
       </div>
-      <div class="page">
-        <section>
-          <div class="section-wrap flex">
-            <div class="section-content">
-              <div class="block left">
-                <h3>Hi! I'm Andrew.</h3>
-                <p>I do marketing for startups. As an employee, for <a href="https://preferredreturn.com/">Preferred Return</a>, <a href="https://gust.com">Gust</a>, <a href="https://kindlingapp.com">Kindling</a>, and others; as a consultant, for <a href="https://underdog.io">Underdog.io</a> and <a href="https://summitsync.com">SummitSync</a>, among a number of other clients and teams.</p>
-                <p>Outside of work, I co-publish the literary short fiction magazine <a href="https://delayfiction.org">delay fiction</a> and play bass in the black metal band <a href="https://floodsbk.bandcamp.com">Floods</a>.</p>
-              </div>
-              <div class="block right">
-                <img src="/assets/andrew-crimer.png">
-              </div>
-            </div>
-        </section>
-        <section id="work" class="white">
-          <div class="section-wrap">
-            <div class="section-head">
-              <h2>work</h2>
-            </div>
-            <div class="section-menu">
-              <div class="section-menu-item" id="delay">
-                <h3 id="delay" class="short">delay fiction</h3>
-              </div>
-              <div class="section-menu-item" id="fet">
-                <h3 id="fet">gust launch financials page</h3>
-              </div>
-              <div class="section-menu-item" id="vid">
-                <h3 id="vid">gust launch demo video</h3>
-              </div>
-              <div class="section-menu-item" id="summitsync">
-                <h3 id="summitsync">summitsync demand gen</h3>
-              </div>
-              <div class="section-menu-item" id="resume">
-                <h3 id="resume" class="short">résumé</h3>
-              </div>
-            </div>
-            <div class="section-menu-item mobile" id="mob-delay">
-              <h3 id="mob-delay">delay fiction</h3>
-            </div>
-            <div class="project" id="section-delay">
-              <div class="glance">
-                <div class="snap">
-                  <a href="https://delayfiction.org/?utm_source=acrimer&utm_medium=personal-site&utm_campaign=2019">
-                    <img src="/assets/delay-fiction.png">
-                  </a>
-                </div>
-                <div>
-                  <ul class="stats">
-                    <li><strong>Challenge:</strong> Not enough good short stories in the world</li>
-                    <li><strong>Solution:</strong> Start a non-profit online literary magazine</li>
-                    <li><strong>Contributions:</strong> Developer, co-editor, executive director</li>
-                    <li><strong>Check it out:</strong> <a href="https://delayfiction.org/?utm_source=acrimer&utm_medium=personal-site&utm_campaign=2019">delayfiction.org</a> and the source on <a href="https://github.com/delayfiction/delayfiction">github</a>
-                  </ul>
-                </div>
-              </div>
-              <div class="writeup">
-                <h3>delay fiction: online litmag</h3>
-                <p>When my friend asked me if I wanted to start a literary magazine, I jumped at the chance to start and run something from absolute scratch. We kicked things off with a branding session where we discovered exactly what we wanted to publish, how we talked, and who we were as an editorial body. The concept we landed on was a five-times-annually online magazine that publishes stories at common travel times, focusing on well-written short fiction that exposes the interiority of its characters. The reading experience is like talking to the person on the stool next to you at a train station bar and gradually finding out that they're a total weirdo—so the weirder the characters, the better. Delay Fiction was born!</p>
-                <p>Over the next couple months I worked with my tech advisor <a href="https://karabernert.com/">Kara Bernert</a> to build a Ruby build script that turns markdown into posts and issues, so we don't have to create static files by hand or deal with all the pagination. So far, it's working great, and since we coded it ourselves, I'm making incremental improvements as they occur to me or become necessary.</p>
-                <p>From a mission standpoint, we also knew we needed to pay our writers. We use Submittable (and direct outreach) to source stories and use the nominal reading fee ($3 per submission) to pay each author we publish $50 per story. It's not much, but it's something, and for a startup non-profit litmag, that's fairly unusual. Now we just need Ottessa Moshfegh to email us back.</p>
-              </div>
-            </div>
-            <div class="section-menu-item mobile" id="mob-fet">
-              <h3 id="mob-fet">gust launch financials page</h3>
-            </div>
-            <div class="project" id="section-fet">
-              <div class="glance">
-                <div class="snap">
-                  <a href="https://gust.com/launch/start#expenses">
-                    <img src="/assets/fet.gif">
-                  </a>
-                </div>
-                <div>
-                  <ul class="stats">
-                    <li><strong>Challenge:</strong> Gust Launch Start users needed recurring engagement to drive upsell</li>
-                    <li><strong>Solution:</strong> Create an expense tracker and cash accounting tool for startup founders</li>
-                    <li><strong>Contributions:</strong> Subject matter expert, UX researcher, marketer, supporting developer</li>
-                    <li><strong>Check it out:</strong> in <a href="https://gust.com/launch/start#expenses">Gust Launch marketing</a> or by buying Gust Launch Start or Accelerate</a>
-                  </ul>
-                </div>
-              </div>
-              <div class="writeup">
-                <h3>gust launch engagement strategy: founder financial tools</h3>
-                <p>As we were trying to grow Gust Launch from a transactional incorporation service into the go-to platform for founders running high-growth startups, we realized we needed to form relationships with our customers that would deliver recurring value and help them skill up as CEOs. As anyone who's ever run a business knows, the key to success is to keep an eye on your cash—so we built some simple, startup-founder-focused cash accounting tools on top of an expense tracker.</p>
-                <p>From a three-month, psychology-style market research project I'd led the previous quarter, we knew that startup founders wouldn't pay for accounting until they felt like they couldn't do it themselves, and that they were usually surprised at how much it cost to start late. But instead of paying accountants, they weren't using Quickbooks themselves—they were using spreadsheets or, more often than not, just ignoring their expenses completely. We could kill two birds with one stone by offering a simple way to track expenses and also help founders understand why they should pay a pro as soon as they can.</p>
-                <p>I spent some time with our accountants, learned a bunch about accounting on my own, and poked around the expense-tracking world to identify the features and functionality we could offer to customers: simple expense tracking, basic cash accounting stats, and as a bonus, tips about which startup costs and other expenses might be deductible from their corporate income taxes. Now we help founders avoid expensive accounting onboarding fees, pass them to our accounting partners sooner, and (most importantly) keep them coming back to Gust Launch.</p>
-              </div>
-            </div>
-            <div class="section-menu-item mobile" id="mob-vid">
-              <h3 id="mob-vid">gust launch demo video</h3>
-            </div>
-            <div class="project" id="section-vid">
-              <div class="glance">
-                <div class="snap">
-                  <div class="video-wrap">
-                    <iframe  src="https://www.youtube.com/embed/EKk2QncadNc?controls=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div>
-                  <ul class="stats">
-                    <li><strong>Challenge:</strong> Prospects wanted a way to see what Gust Launch was like, but we couldn't demo it</li>
-                    <li><strong>Solution:</strong> Create a short video showing how the software helps founders incorporate</li>
-                    <li><strong>Contributions:</strong> Everything but performing the voiceover</li>
-                    <li><strong>Check it out:</strong> in <a href="https://gust.com/launch/start#incorporation">Gust Launch marketing</a> or embedded here</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="writeup">
-                <h3>gust launch demo video: incorporate in under two minutes</h3>
-                <p>Gust Launch starts with the incorporation process—a legal wizard that walks founders through creating a new Delaware C-Corporation. Because the software was built with the expectation that a founder would only do this once (and everything else the product does expects it to have already happened) there was no easy way to demo the software for interested prospects. To give them an idea of what the software looks and feels like, I created a video that shows the incorporation process.</p>
-                <p>This video is not <em>exactly</em> a live recording: it's a bunch of little screencaptures massaged, cut, and connected to simulate software use. The founder (<a href="https://en.wikipedia.org/wiki/The_Sun_Also_Rises">Jacob Barnes</a>) walks through the incorporation for his company (AppBlaster, a phone app that downloads five new apps a day (obviously not real)) in about two minutes, but in reality it would probably take more like... five minutes.</p>
-                <p>I shot the video using QuickTime, edited it using Adobe Premiere and Adobe Audition, and recorded about three minutes of off-the-cuff, highly ignorable guitar riffage for the <em>de rigeur</em> "inoffensive startup video" soundtrack. The voiceover was performed by a co-worker, but I wrote the script and produced the audio.</p>
-                <p>The outcome? Viewing this video quickly became one of the strongest predictors of purchase.</p>
-              </div>
-            </div>
-            <div class="section-menu-item mobile" id="mob-summitsync">
-              <h3 id="mob-summitsync">summitsync demand gen</h3>
-            </div>
-            <div class="project" id="section-summitsync">
-              <div class="glance">
-                <div class="snap">
-                  <a href="https://summitsync.com">
-                    <img src="/assets/summitsync.png">
-                  </a>
-                </div>
-                <div>
-                  <ul class="stats">
-                    <li><strong>Challenge:</strong> <a href="https://summitsync.com">SummitSync</a> was relying on SDRs for all leads</li>
-                    <li><strong>Solution:</strong> Build an inbound lead pipeline by any means necessary</li>
-                    <li><strong>Contributions:</strong> Strategist, developer, SEO, and ad ops for search and social</li>
-                    <li><strong>Check it out:</strong> at <a href="https://summitsync.com">SummitSync's website</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="writeup">
-                <h3>summitsync's inbound pipeline and funnel</h3>
-                <p>SummitSync's meeting automation platform had a viable market but wasn't organically achieving traction due to low category awareness, and their main strategy for finding leads was through cold calls. They brought me in to beef up their inbound pipeline and reduce their reliance on SDRs running outbound by bringing more and better traffic to the site, converting it, and nurturing the leads to demo-readiness.</p>
-                <p>I started with an SEO overhaul that aligned the website with the search terms their audience was using, then peppered the site with conversion points and engagement tools (like a <a href="https://summitsync.com/pricing">pricing calculator</a>), CTAs, and embeddable download units, all packaged neatly and controllable from the systems their marketers already used. I also set up marketing automation software and designed a custom Hubspot/Salesforce selective sync that kept only marketing-ready contacts in Hubspot but preserved all data in SFDC.</p>
-                <p>Next I built out a landing page system designed to capture interest from paid search traffic, especially search users looking at SummitSync's competitors, and paired the conversion points with automated funnel emails designed to nurture converters into a demo-ready state. Lastly, I rebuilt their blog templates to work with Google's AMP. At the end of the project, even discounting search traffic, the website was pulling in about double the traffic, and the traffic wasn't just bouncing, it was engaging with marketing and scheduling demos.</p>
-              </div>
-            </div>
-            <div class="section-menu-item mobile" id="mob-resume">
-              <h3 id="resume">résumé</h3>
-            </div>
-            <div class="project" id="section-resume">
-              <div class="res-section title two">
-                <div>
-                  <h3>experience</h3>
-                </div>
-                <div class="right">
-                  <p><a id="download-resume" href="/assets/andrew-crimer-resume-2020-web.pdf">download</a></p>
-                </div>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://preferredreturn.com/">Preferred Return</a></h3>
-                <p>NYC. Head of Growth, January 2019 to present.</p>
-                <ul>
-                  <li>Selling 409A valuations and building new revenue streams. More TK.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://gust.com/">Gust</a></h3>
-                <p>NYC. Marketing Manager, October 2016 to April 2018; Senior Marketing Manager April 2018 to January 2019.</p>
-                <ul>
-                  <li><strong>Marketing/Content:</strong> edit all content, including social media, blog posts, educational email campaigns, and ebooks. Own all marketing automation. Contribute to data tracking and analytics to support marketing efforts. Contribute to development and maintenance of marketing websites. Co-developed blog software and produced a post per week during project duration, clearing 15k pageviews by week two. Oversee and edit contributions from other marketers and thought leaders. Produce product videos as necessary.</li>
-                  <li><strong>Product:</strong> defined direction for Gust Launch repackaging and development through 3-month research project, leading to sustained increase in higher-tier package subscriptions. Defined, researched, and contributed to development for in-platform financial tracking and education featureset. Contribute to product development and write copy for acquisition experience tools.</li>
-                  <li><strong>Strategy:</strong> completely own Gust Launch SaaS upsell strategy. Co-own acquisition strategy with Senior Director of Marketing. Designed and implemented 20-workflow mid-funnel email nurturing automation system for 200k+ contact database. Co-own conversion strategies and optimization. Defined paid search strategy for $20k monthly AdWords budget, reducing CAC from over $1000 to $66-$300 depending on campaign. Own SEO strategy.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://blankslate.com/">Blank Slate Factory</a></h3>
-                <p>Brooklyn. Brownstoner Product Marketing Manager, January 2016 to September 2016.</p>
-                <ul>
-                  <li><strong>Marketing/Content:</strong> owned social media strategy, including posting 20-30x daily across multiple social channels to audiences up to 15,000 followers and subsequently overseeing social media marketing coordinator. Produced ad collateral as necessary. Executed social media advertising campaigns for Brownstoner and customers.</li>
-                  <li><strong>Product:</strong> built and operated MVP “concierge” service to drive leads to advertising customers, increasing customer retention and renewal rates by circulating average 30 new leads to customers per week (2-3x increase). Led UX analytics development.</li>
-                  <li><strong>Strategy:</strong> led rollout of rebranded Brownstoner, including writing copy and producing video assets. Owned community management and customer success efforts. Implemented marketing analytics systems.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://kindlingapp.com/">Kindling</a></h3>
-                <p>NYC. Marketing Manager, September 2014 to December 2015.</p>
-                <ul>
-                  <li><strong>Marketing/Content:</strong> owned blog, social media, and email initiatives. Filmed and produced product and marketing videos as necessary (product photography, animation, and live action).</li>
-                  <li><strong>Strategy:</strong> contributed to implementation and rollout of freemium pricing model, including conversion optimization.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3>Winkleman Company</h3>
-                <p>NYC. Writer/Social Media Strategist, October 2012 to August 2014.</p>
-              </div>
-              <div class="res-section">
-                <h3>Smarterer</h3>
-                <p>Boston. Marketing Intern, April 2012 to August 2012.</p>
-              </div>
-              <div class="res-section title">
-                <h3>education</h3>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://conncoll.edu">Connecticut College</a></h3>
-                <p>New London. August 2008 to May 2011. BA: Literature with Film Studies minor conferred May 2011.</p>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://honors.umass.edu">Commonwealth Honors College at UMass Amherst</a></h3>
-                <p>Amherst. August 2007 to May 2008. English and Film.</p>
-              </div>
-              <div class="res-section title">
-                <h3>skills</h3>
-              </div>
-              <div class="res-section">
-                <p>Technology</p>
-                <ul>
-                  <li><strong>Marketing:</strong> HubSpot, Mailchimp, Salesforce, Google Analytics, Periscope Data</li>
-                  <li><strong>Code:</strong> Javascript, Ruby, Golang, HTML, CSS, git, and SQL</li>
-                  <li><strong>Production:</strong> Adobe Creative Cloud (InDesign, Photoshop, Illustrator, Audition, Premiere), FinalCut</li>
-                  <li><strong>Ad Ops:</strong> AdWords, Facebook for Business, LinkedIn, Instagram</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <p>Techniques</p>
-                <ul>
-                  <li><strong>Marketing:</strong> content marketing, email marketing, SEO, automation, online and IRL advertising</li>
-                  <li><strong>Production:</strong> video, audio, layout, and the classics: writing and editing</li>
-                </ul>
-              </div>
-              <div class="res-section title">
-                <h3>service &amp; side hustles</h3>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://delayfiction.org/?utm_source=acrimer&utm_medium=personal-site&utm_campaign=2019">delay fiction</a></h3>
-                <p>NYC/Worcester. Co-Editor &amp; Executive Director, May 2018 to present.</p>
-                <ul>
-                  <li>Co-edit and publish nonprofit literary magazine five times annually. Build and maintain website and handle all operational needs.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3>Student Activities Council</h3>
-                <p>Connecticut College. Dorm Rep, September 2009 to May 2010; Concert Chair, May 2010 to May 2011.</p>
-                <ul>
-                  <li>Organized, booked, executed, and promoted both a weekly concert series ($18,500 budget), increasing average weekly attendance from 10 people to 60 through rebranding and social media avenues, and a school-wide year-end concert ($30,000 budget).</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://www.conncoll.edu/offices/roth-writing-center/">Roth Writing Center</a></h3>
-                <p>Connecticut College. Writing Tutor, September 2009 to May 2010.</p>
-                <ul>
-                  <li>Workshopped writing for students across all majors to improve coherency and competence.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="https://www.conncoll.edu/community-partnerships/">ConnColl OVCS</a></h3>
-                <p>Connecticut College. Magnet School Tutor, September 2009 to May 2010.</p>
-                <ul>
-                  <li>Tutored local magnet students in AP Biology, Chemistry, Algebra I &amp; II, and Geometry.</li>
-                </ul>
-              </div>
-              <div class="res-section">
-                <h3><a href="">The College Voice</a></h3>
-                <p>Connecticut College. Staff Writer, September 2009 to May 2011.</p>
-                <ul>
-                  <li>Pitched, researched, and wrote local news, opinions, and arts articles.</li>
-                  <li>Edited other writers’ articles for content, layout and substance.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <div class="section-wrap">
-            <div class="section-head">
-              <h2>contact</h2>
-            </div>
-            <div class="section-content center">
-              <div class="block">
-                <p>If you need your funnel to work better, send me an <a onclick="gtag_report_conversion()" href="mailto:andrew.crimer@gmail.com">email</a>. If your inquiry is related to delay fiction, please email me at my <a href="mailto:andrew@delayfiction.org">delay email</a>.</p>
-                <p>You can also find me on <a href="https://linkedin.com/in/andrewcrimer">linkedin</a>.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-          </div>
-          <footer>
-            <div class="footer-content">
-              <p>&copy; <span id="year"></span> <a href="/">Andrew Crimer</a></p>
-            </div>
-          </footer>
-    </body>
+    </div>
+    <div>
+      <div class="content">
+        <h2>So what do you <em>do?</em></h2>
+        <p>I’ve been working in (mostly) marketing for (mostly) tech startups for my whole career. I started with content marketing (English major!) and gradually built up a ton of technical and strategic skills for identifying and executing against marketing and growth opportunities. I’ve also grown to center people management, leadership, and mentorship in my definition of “good work.”</p>
+        <p>My approach is usually super scrappy but super systems-heavy: up to a certain level of programming I can usually get by without support from devs, other ops people, or data teams. I’m also extremely literate in ads platforms and the standard GTM tools we all know and love, like Salesforce and all the marketing automation staples.</p>
+        <p>The technical skills are just a foundation, though. Building a marketing motion or a GTM machine is really all about marketing fundamentals, knowing your customer, and creating quality experiences that offer real value to the individual, living humans in your audience. That’s where I really focus.</p>
+      </div>
+    </div>
+    <div class="dotty">
+      <div class="content">
+        <h2>Do you want to share some resume highlights?</h2>
+
+        <p>Sure! I currently lead growth marketing / demand gen for <a href="https://repeatmd.com/">RepeatMD</a> and previously ran ads + SEO at <a href="https://carta.com/">Carta</a> after they acquired a company called Preferred Return, where I’d run marketing from ~$200k to ~$2.5M ARR.</p>
+        <p>I’ve worked at or consulted for <a href="https://linkedin.com/in/andrewcrimer">like a dozen other companies</a>, too. Some exited, some obviously flopped. I’ve really seen a lot of different situations and solved a lot of weird little problems. I’m always open to hearing about new ones, too—feel free to drop me a line.</p>
+      </div>
+    </div>
+    <div class="ctas">
+      <h3>Are there actions that a user can take on this website?</h3>
+
+      <p>Yes, here’s one. Working on a cool startup project and want a marketing soundboard? <a href="mailto:andrew.crimer@gmail.com">Tell me about it</a>. I’d love to help.</p>
+
+      <h3>What if I’d rather hear some jams?</h3>
+
+      <p>Hell yeah, <a href="https://skeletalmass.bandcamp.com">check out my band</a>!</p>
+      <p>Formerly also of <a href="https://floodsbk.bandcamp.com">FLOODS</a> (RIP), <a href="https://posturebk.bandcamp.com">Posture</a> (RIP), and <a href="https://wickerbk.bandcamp.com">wicker</a> (RIP...?)</p>
+    </div>
+    <div class="quote dotty">
+      <div class="content">
+        <p>And what are you, reader, <br class="no-mobile">but a <a href="https://www.gutenberg.org/cache/epub/2701/pg2701-images.html#link2HCH0089">Loose-Fish and a Fast-Fish</a>, too?</p>
+      <p>–Moby-Dick; or, the Whale</p>
+      </div>
+    </div>
+    <div class="footy">
+      <p><em>sure, let’s say it’s copyrighted! 2024; a. crimer</em></p>
+    </div>
+  </body>
 </html>
